@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
+import {CrudService} from './crud.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ export class AppComponent implements OnInit {
 
   formVar: FormGroup ;
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder,private CrudService : CrudService) {}
 
   ngOnInit() {
     this.formVar = this.formBuilder.group({
@@ -21,6 +22,8 @@ export class AppComponent implements OnInit {
   }
   onSubmit() {
     console.log(this.formVar.value);
+
+    this.CrudService.create(this.formVar.value).subscribe(data=>console.log(data));
     
   }
 }
