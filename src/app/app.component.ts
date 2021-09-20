@@ -15,8 +15,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.formVar = this.formBuilder.group({
-      name: '',
-      age:''
+      email: '',
+      password:''
       });
     
   }
