@@ -1,0 +1,38 @@
+.standard-logo{
+    width: 150px;
+    transform-origin: left center;
+}
+.logo-transition img{
+    transition: all 0.3s;
+}
+.logo a:hover{
+    max-width: 100%;
+    color: #0e6db1;
+}
+ul.nav-top li{
+    display: inline;
+}
+.header-right-top{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+.header-search{
+    padding-left: 20px;
+}
+.header-right{
+    display:grid;
+    grid-template-rows: auto auto;
+    justify-content: right;
+    padding-right: 10px;
+}
+.header-right-bottom{
+    justify-content:right;
+    padding-left: 300px;
+}
+.header{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+

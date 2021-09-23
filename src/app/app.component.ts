@@ -8,22 +8,9 @@ import {CrudService} from './crud.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-
-  formVar: FormGroup ;
-
-  constructor(private formBuilder: FormBuilder,private CrudService : CrudService) {}
-
-  ngOnInit() {
-    this.formVar = this.formBuilder.group({
-      email: '',
-      password:''
-      });
-    
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
-  onSubmit() {
-    console.log(this.formVar.value);
 
-    this.CrudService.create(this.formVar.value).subscribe(data=>console.log(data));
-    
-  }
+ 
 }

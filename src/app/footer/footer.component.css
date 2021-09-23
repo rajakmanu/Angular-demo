@@ -1,0 +1,49 @@
+.footer-main{
+    background-color: black;
+}
+.bias-logo{
+    margin: 0px ;
+}
+.key-topics {
+    color: white;
+  
+}
+.key-topics-menu{
+    color: white;
+}
+.button{
+    color: aquamarine;
+}
+.connect{
+    color: white;
+}
+.connect-menu{
+    color: white;
+}
+.knowledge{
+    color: white;
+}
+.knowledge-menu{
+    color: white;
+}
+.get-in-touch, .touch{
+    color: white;
+}
+.get-in-touch-menu{
+    color: white;
+}
+.learn-more{
+    color: white;
+}
+.connect-with-bias{
+    color: white;
+}
+/*.key, .connect-head, .know, .touch{
+    padding-left: 60px;
+}*/
+.key, .phone{
+    padding-left: 60px;
+}
+.connect-head{
+    padding-left: 0px;
+}

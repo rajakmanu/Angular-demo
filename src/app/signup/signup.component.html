@@ -1,0 +1,95 @@
+<div class="container ">
+    <div class="row">
+        <div class="col-md-6 mx-auto text-center">
+            <div class="card ">
+                <div class="card-body">
+                    <div class="row p-2">
+                        <div class="col" >
+                            
+                           
+                            <img  class="center-img"  src="https://img.icons8.com/material-rounded/50/000000/user.png"/>
+                            <h5 class="card-title text-center text-uppercase">SignUp</h5>
+                        </div>
+                        <div class="microsoftLogIn p-2">
+                            <a href="#"class="btn  btn-social btn-block btn-microsoft rounded-pill">
+                                <i class="fab fa-windows"></i> Login with Microsoft
+                                </a>
+                            
+                        </div>
+                        <div class="googlelogIn p-2">
+                            <a href="#" class="btn  btn-social btn-block btn-google rounded-pill ">
+                                <i class="fab fa-google "></i> Login with Google
+                            </a>
+                            
+                        </div>
+                        <div class="linkedinlogIn p-2">
+                            <a href="#" class="btn  btn-social btn-block btn-linkedin rounded-pill ">
+                                <i class="fab fa-linkedin "></i> Login with LinkedIn
+                            </a>
+                            
+                        </div>
+                        
+                    </div>
+                    <form [formGroup]="formVar" (ngSubmit)="onSubmit()">
+                      
+                        <div class="form ">
+						
+                          <label for="name" class="fa fa-user"></label>
+                          <input type="text" placeholder="Enter Your Name" formControlName="name">
+                          <span class="text-danger " *ngIf="formVar.controls.name.errors && formVar.controls.name.touched">
+                            <br>Name is required
+                        </span>  
+                        </div>
+                        <div class="form">
+						
+                          <label for="name" class="fa fa-envelope"></label>
+                          <input type="text" placeholder="Enter Your Email" formControlName="userEmail">
+                          <span class="text-danger " *ngIf="formVar.controls.userEmail.errors && formVar.controls.userEmail.touched">
+                            <br>Invalid Email Address
+                        </span>  
+                        </div>
+                        <div class="form">
+						
+                          <label for="name" class="fa fa-mobile"></label>
+                          <input type="text" placeholder="Enter Your Mobile Number" formControlName="mob_num"> 
+                          <span class="text-danger " *ngIf="formVar.controls.mob_num.errors && formVar.controls.mob_num.touched">
+                            <br>Mobile number is required
+                        </span>   
+                        </div>
+                        <div class="form">
+						
+                          <label for="name" class="fa fa-lock"></label>
+                          <input type="password" placeholder="Password" formControlName="password"> 
+                          <span class="text-danger " *ngIf="formVar.controls.password.errors && formVar.controls.password.touched">
+                            <br>Atleast 6 character Password is Required
+                        </span>   
+                        </div> 
+                        <br>
+                        <div class="form ">
+                            <ngx-recaptcha2 id="captchaElem"  [siteKey]="siteKey" formControlName="recaptcha">
+                                
+                            </ngx-recaptcha2>
+                            
+                                
+                            
+                        </div>
+                        <div class="form p-2">
+                          <button class="btn  btn-success  text-uppercase "  id="submitButton" type="submit">Sign Up</button>
+
+                        </div>                     
+                        <div class="text-success" *ngIf="successMessage">
+                          {{formVar.value.name}} , you are  {{successMessage}}
+                      </div>                           
+                        
+                        
+                                     
+                    
+                  
+                
+               </form>        
+                                   
+            </div>
+            
+        </div>
+    </div>
+  </div>

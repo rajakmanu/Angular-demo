@@ -1,0 +1,94 @@
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+  }
+  
+  .card-signin .card-body {
+    padding: 2rem;
+  }
+  .container{
+    padding-bottom: 5rem;
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+    
+  }
+  .btn-social {
+    position: relative;
+    padding-left: 5px;
+    text-align: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+  }
+  
+  
+  
+  .btn-linkedin:hover {
+  color: #fff;
+  background-color:  #005983;
+  border-color: rgba(0,0,0,0.2)
+  }
+  
+  .btn-linkedin {
+  color: #fff;
+  background-color: #007bb6;
+  border-color: rgba(0,0,0,0.2)
+  }
+  
+  .btn-microsoft {
+  color: #fff;
+  background-color: #2672ec;
+  border-color: rgba(0,0,0,0.2);
+  }
+  .btn-microsoft:hover {
+  color: #fff;
+  background-color: #337ab7;;
+  border-color: rgba(0,0,0,0.2)
+  }
+  
+  .btn-google {
+  color: #fff;
+  background-color: #dd4b39;
+  border-color: rgba(0,0,0,0.2)
+  }
+  .btn-google:hover {
+  color: #fff;
+  background-color: #b64131;
+  border-color: rgba(0,0,0,0.2)
+  }
+  input{
+    border:none;
+    background-color: rgba(255,255,255,0);
+    border-bottom:solid black;
+    size:3px;
+    margin-left: 10px;
+    width: 85%;
+}
+label{
+  color: grey;
+}
+.form-group{
+  margin-top:30px;
+}
+form{
+  padding:12px;
+}
+.social-btn{
+  padding-inline-start: 2rem;
+}
+#captchaElem{
+  
+  margin: 15px auto !important;
+  width: auto !important;
+  height: auto !important;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+  text-align: -o-center;
+  text-align: -ms-center;
+}
