@@ -62,11 +62,11 @@
   background-color: #b64131;
   border-color: rgba(0,0,0,0.2)
   }
-  input{
+input{
     border:none;
     background-color: rgba(255,255,255,0);
-    border-bottom:solid black;
-    size:3px;
+    border-bottom:solid whitesmoke;
+    size: 3px;
     margin-left: 10px;
     width: 85%;
 }
@@ -76,11 +76,13 @@ label{
 .form-group{
   margin-top:30px;
 }
-form{
-  padding:12px;
-}
+
 .social-btn{
   padding-inline-start: 2rem;
+}
+.form{
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 #captchaElem{
   
