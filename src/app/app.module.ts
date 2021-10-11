@@ -13,6 +13,8 @@ import { LoginComponent } from './login/login.component';
 import{BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { ToastrModule } from 'ngx-toastr';
 import { timeout } from 'rxjs/operators';
+import { TeamComponent } from './team/team.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { timeout } from 'rxjs/operators';
     FooterComponent,
     SignupComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    TeamComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
