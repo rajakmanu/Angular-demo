@@ -1,7 +1,7 @@
 <app-header></app-header>
 <div class="container ">
     <div class="row">
-        <div class="col-md-6 mx-auto text-center">
+        <div class="col-md-8 mx-auto text-center">
             <div class="card ">
                 <div class="card-body">
                     <div class="row p-2">
@@ -31,6 +31,10 @@
                         </div>
                         
                     </div>
+                <div>
+                   <h6 >OR</h6>
+
+                </div>
                     <form [formGroup]="formVar" (ngSubmit)="onSubmit()">
                       
                         <div class="form " >
@@ -70,14 +74,16 @@
                             <ngx-recaptcha2 id="captchaElem"  [siteKey]="siteKey" formControlName="recaptcha">
                                 
                             </ngx-recaptcha2>
-                            
-                                
-                            
+                                   
                         </div>
+                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
                         <div class="form p-2">
                           <button class="btn  btn-success  text-uppercase "  id="submitButton" type="submit">Sign Up</button>
+                          
+                                              
 
-                        </div>                     
+                        </div>
+                        <a routerLink="/login"><h6>Already have an account ? Login</h6></a>                     
                         <div class="text-success" *ngIf="successMessage">
                           {{formVar.value.name}} , you are  {{successMessage}}
                       </div>                           
@@ -88,7 +94,6 @@
                   
                 
                </form>        
-               <a routerLink="/login">login</a>                    
             </div>
             
         </div>
